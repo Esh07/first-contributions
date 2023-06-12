@@ -10,6 +10,9 @@ jobs:
       # Check out the repository code
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          # Fetch the full commit history
+          fetch-depth: 0
 
       # Check if the pull request only modifies the CONTRIBUTORS.md file
       - name: Check if PR only modifies CONTRIBUTORS.md
