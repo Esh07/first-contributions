@@ -68,25 +68,17 @@ jobs:
 
       # Post a comment on the pull request if it was not merged automatically
       - name: Post comment on PR if not merged automatically
+        # Check if the pull request only modifies the CONTRIBUTORS.md file
         if: steps.is_only_contributors_file_changed.outputs.only_contributors != 'true'
         uses: actions/github-script@v5
         with:
           script: |
-            // Check if the pull request only modifies the CONTRIBUTORS.md file
-            if (steps.is_only_contributors_file_changed.outputs.only_contributors != 'true') {
-              // Post a comment on the pull request saying that it contains changes in other files too which requires review
+            // Post a comment on the pull request saying that it contains changes in other files too which requires review
               github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
                 body: "This pull request contains changes in other files too which requires review."
               })
-            } else {
-              // Post a comment on the pull request saying that it is on hold for review and should only modify the CONTRIBUTORS.md file and add a non-spam, non-offensive, and non-malicious link.
-              github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                body: "This pull request is on hold for review. Please make sure that it only modifies the `CONTRIBUTORS.md` file and adds a non-spam, non-offensive, and non-malicious link."
-              })
-            }
+
+
