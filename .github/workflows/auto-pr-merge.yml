@@ -23,16 +23,23 @@ jobs:
           # Check if the list of changed files only contains the CONTRIBUTORS.md file
           if [[ "$FILES_CHANGED" == "CONTRIBUTORS.md" ]]; then
             # Set the only_contributors output variable to 'true'
-            echo "::set-output name=only_contributors::true"
+            # Older way doing it 
+            # echo "::set-output name=only_contributors::true"
+            # new way doing it
+            echo "only_contributors=true" >> $GITHUB_ENV
           else
             # Set the only_contributors output variable to 'false'
-            echo "::set-output name=only_contributors::false"
+            # echo "::set-output name=only_contributors::false"
+            echo "only_contributors=false" >> $GITHUB_ENV
           fi
 
       # Merge the pull request if it only modifies the CONTRIBUTORS.md file
       - name: Merge PR
         id: merge_pr
-        if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true'
+        # older version
+        # if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true'
+        # new version
+        if: env.only_contributors == 'true'
         uses: actions/github-script@v5
         with:
           script: |
@@ -54,7 +61,10 @@ jobs:
 
       # Post a comment on the pull request if it was successfully merged
       - name: Post comment on successful merge
-        if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true' && steps.merge_pr.outputs.merged == 'true'
+        # old version of code
+        # if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true' && steps.merge_pr.outputs.merged == 'true'
+        # new version of code
+        if: env.only_contributors == 'true' && steps.merge_pr.outputs.merged == 'true'
         uses: actions/github-script@v5
         with:
           script: |
@@ -69,7 +79,7 @@ jobs:
       # Post a comment on the pull request if it was not merged automatically
       - name: Post comment on PR if not merged automatically
         # Check if the pull request only modifies the CONTRIBUTORS.md file
-        if: steps.is_only_contributors_file_changed.outputs.only_contributors != 'true'
+        if: env.only_contributors == 'true' && steps.merge_pr.outputs.merged != 'true'
         uses: actions/github-script@v5
         with:
           script: |
