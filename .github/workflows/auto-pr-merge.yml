@@ -30,7 +30,7 @@ jobs:
           else
             # Set the only_contributors output variable to 'false'
             # echo "::set-output name=only_contributors::false"
-            echo "only_contributors=true" >> $GITHUB_ENV
+            echo "only_contributors=false" >> $GITHUB_ENV
           fi
           
       - name: Use environment variable
