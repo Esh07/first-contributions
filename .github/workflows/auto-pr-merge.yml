@@ -20,6 +20,10 @@ jobs:
         run: |
           # Get a list of files changed in the pull request
           FILES_CHANGED=$(git diff --name-only HEAD HEAD~1)
+          
+          # Set the files_changed environment variable to the list of changed files
+          echo "files_changed=$FILES_CHANGED" >> $GITHUB_ENV
+          
           # Check if the list of changed files only contains the Contributors.md file
           if [[ "$FILES_CHANGED" == "Contributors.md" ]]; then
             # Set the only_contributors output variable to 'true'
@@ -74,16 +78,16 @@ jobs:
       # Post a comment on the pull request if it was not merged automatically
       - name: Post comment on PR if not merged automatically
         # Check if the pull request only modifies the CONTRIBUTORS.md file
-        if: env.only_contributors == 'true' && steps.merge_pr.outputs.merged != 'true'
+        if: env.only_contributors != 'true'
         uses: actions/github-script@v5
         with:
           script: |
             // Post a comment on the pull request saying that it contains changes in other files too which requires review
-              github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                body: "This pull request contains changes in other files too which requires review."
-              })
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Thank you for your pull request. This pull request contains changes in files too which requires review. The following files were changed: ${process.env.files_changed}`
+            })
 
 
