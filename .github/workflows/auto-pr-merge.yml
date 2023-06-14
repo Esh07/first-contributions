@@ -87,7 +87,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `Thank you for your pull request. This pull request contains changes in files too which requires review. This pull request contains changes in other files too which requires review. The following files were changed:\n\n**${process.env.files_changed}**`
+              body: `Thank you for your pull request. This pull request contains changes in files which requires review. The following files were changed:\n\n**${process.env.files_changed}**`
             })
 
 
