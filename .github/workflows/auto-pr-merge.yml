@@ -70,22 +70,6 @@ jobs:
               })
             }
 
-      # Post a comment on the pull request if it was successfully merged
-      - name: Post comment on successful merge
-        # old version of code
-        # if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true' && steps.merge_pr.outputs.merged == 'true'
-        # new version of code
-        if: env.only_contributors == 'true' && steps.merge_pr.outputs.merged == 'true'
-        uses: actions/github-script@v5
-        with:
-          script: |
-            // Post a comment on the pull request using the createComment method
-            github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: "This pull request has been successfully merged. Thank you for your contribution!"
-            })
 
       # Post a comment on the pull request if it was not merged automatically
       - name: Post comment on PR if not merged automatically
