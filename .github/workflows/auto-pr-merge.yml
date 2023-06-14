@@ -13,8 +13,8 @@ jobs:
         with:
           # Fetch the full commit history
           # fetch-depth: 0
-          # Fetch only the most recent commit
-          fetch-depth: 1
+          # Fetch only the 2 most recent commit
+          fetch-depth: 2
 
 
       # Check if the pull request only modifies the Contributors.md file
