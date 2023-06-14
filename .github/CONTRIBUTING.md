@@ -53,6 +53,7 @@ If you're making changes to a translation, please request a review from our prev
 | മലയാളം | [Malayalam](../translations/README.ml.md) | [<img width="100" src="https://avatars.githubusercontent.com/u/3657426?v=4" alt="@yedhukrishnan">](https://github.com/yedhukrishnan) |
 | Burmese | [Burmese](../translations/README.mm_unicode.md) | [<img width="100" src="https://avatars0.githubusercontent.com/u/13135332?s=460&v=4" alt="@lwinkyawmyat" />](https://github.com/lwinkyawmyat) |
 | मराठी | [Marathi](../translations/README.mr.md) | [<img width="100" src="https://avatars1.githubusercontent.com/u/16685565?s=460&v=4" alt="@bantya" />](https://github.com/bantya) |
+For some reason, people like putting their names here.
 | Español de México | [Spanish of Mexico](../translations/README.mx.md) | []() |
 | Bahasa Melayu | [Malay](../translations/README.my.md) | []() |
 | Nederlandse | [Dutch](../translations/README.nl.md) | [<img width="100" src="https://avatars0.githubusercontent.com/u/3897815?s=460&v=4" alt="@MJMajoor" />](https://github.com/MJMajoor) |
