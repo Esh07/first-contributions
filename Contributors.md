@@ -50,6 +50,7 @@ testing with script
 - [Norvillie Villaruel](https://github.com/nozky)
 - [Prerna Singh](https://github.com/PrernaSingh01)
 - Tamanna Niger Tuly
+- Vidyasagar
 - [Soy Eric](https://github.com/ibrahimeric)
 - [Mandeep Singhmar](https://github.com/Mandeepsinghmar)
 - [Elizabeth Czarny](https://github.com/Elizabeth-Cz)
