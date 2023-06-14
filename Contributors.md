@@ -172,6 +172,7 @@ testing with script
 - [Lukasz Gzella](https://github.com/lukasgzella)
 - [Shaik Mohammad Afzal](https://github.com/afzxlsgit)
 - [Adarsh Agarwal]
+- Kevin Van Newton
 - [Lucas Moyano](https://github.com/LucasEPK)
 - [Joy](https://github.com/aquaj0y)
 - [John](https://github.com/duckheap)
