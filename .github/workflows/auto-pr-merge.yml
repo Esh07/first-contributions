@@ -60,6 +60,14 @@ jobs:
             } else {
               // Set the merged output variable to 'false'
               core.setOutput('merged', 'false')
+              
+              // Post a comment on the pull request using the createComment method
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: "Something went wrong while attempting to merge this pull request. Please check the GitHub Actions log for more information."
+              })
             }
 
       # Post a comment on the pull request if it was successfully merged
