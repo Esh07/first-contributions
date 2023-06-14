@@ -68,6 +68,7 @@ testing with script
 - [Siim Sink](https://github.com/sinkkkk)
 - [Mayank Gautam]
 - Tamanna
+- Wammawink
 - Rahul-Sharing
 - [Tyler Lowe](https://github.com/TylerRLowe)
 - [Abhishek Kumar](https://github.com/abhishek-Roy22)
