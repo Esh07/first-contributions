@@ -3,11 +3,14 @@ on:
   pull_request:
     types: [opened, synchronize]
     
+permissions:
+  pull-requests: write-all
+    
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      pull-requests: write-all
       
     steps:
       # Check out the repository code
