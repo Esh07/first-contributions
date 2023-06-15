@@ -76,6 +76,8 @@ jobs:
                 body: "Something went wrong while attempting to merge this pull request. Please check the GitHub Actions log for more information."
               })
             }
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
 
 
       # Post a comment on the pull request if it was not merged automatically
@@ -92,5 +94,7 @@ jobs:
               issue_number: context.issue.number,
               body: `Thank you for your pull request. This pull request contains changes in files which requires review. The following files were changed:\n\n**${process.env.files_changed}**`
             })
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
 
 
