@@ -9,7 +9,8 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write-all
+      contents: read
+      pull-requests: write
       
     steps:
       # Check out the repository code
