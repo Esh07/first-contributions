@@ -68,6 +68,7 @@ jobs:
               pull_number: context.issue.number,
               merge_method: "squash"
             })
+            console.log(response);
             // Check if the merge was successful by checking the status code of the response
             if (response.status === 200) {
               // Set the merged output variable to 'true'
@@ -84,6 +85,16 @@ jobs:
                 body: "Something went wrong while attempting to merge this pull request. Please check the GitHub Actions log for more information."
               })
             }
+            
+            if (context.payload.pull_request.merged) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: "The pull request was successfully merged!"
+              })
+            }
+
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
 
