@@ -3,11 +3,12 @@ on:
   pull_request_target:
     types: [opened, synchronize]
     paths:
-      - 'Contributors.md'
+      - 'Contributors.md' # <- only run if only contributors file changed
     
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.changed_files == 1 && contains(github.event.pull_request.changed_files, 'Contributors.md')
     permissions:
       contents: write
       pull-requests: write
@@ -68,7 +69,7 @@ jobs:
               pull_number: context.issue.number,
               merge_method: "squash"
             })
-            console.log(response);
+            // console.log(response);
             // Check if the merge was successful by checking the status code of the response
             if (response.status === 200) {
               // Set the merged output variable to 'true'
