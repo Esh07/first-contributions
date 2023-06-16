@@ -68,6 +68,7 @@ jobs:
         if: env.only_contributors == 'true'
         uses: actions/github-script@v5
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             // Attempt to merge the pull request using the squash method
             const response = await github.rest.pulls.merge({
@@ -101,7 +102,7 @@ jobs:
               })
             }
 
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+
 
 
 
