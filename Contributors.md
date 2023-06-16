@@ -1,7 +1,7 @@
 # Contributors
 
 <!-- prettier-ignore-start and welcome -->
-Here is the person name for testing with Ci/CD
+Here is the person name for testing with Ci/CD (merge conflict)
 - [Abhay Donga](https://github.com/AbhayDonga007)
 - [Nandha Kumar](https://github.com/tnrock)
 - [Widdershins](https://github.com/Widdershins89)
