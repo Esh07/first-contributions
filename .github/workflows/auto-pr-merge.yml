@@ -12,9 +12,6 @@ jobs:
       issues: write
       
     steps:
-      # remove the cache 
-      - name: Clear Cache
-        run: echo "::set-env name=CLEAR_CACHE::true"
       
       # Check out the repository code
       - name: Checkout code
