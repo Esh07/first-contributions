@@ -76,7 +76,8 @@ jobs:
               pull_number: context.issue.number,
               merge_method: "squash"
             })
-            // console.log(response);
+            console.log(response);
+            console.log(response.status);
             // Check if the merge was successful by checking the status code of the response
             if (response.status === 200) {
               // Set the merged output variable to 'true'
