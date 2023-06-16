@@ -43,7 +43,13 @@ jobs:
           echo "files_changed=$FILES_CHANGED" >> $GITHUB_ENV
 
           # Check if the list of changed files only contains the Contributors.md file
-          if [[ "$FILES_CHANGED" == "Contributors.md" ]]; then
+          
+          # OLD version of code
+          # if [[ "$FILES_CHANGED" == "Contributors.md" ]]; then
+          
+          # [Updated] Remove any spaces from variable $FILE_CHANGED and then compare
+          if [[ "${FILES_CHANGED// /}" == "Contributors.md" ]]; then
+
             # Set the only_contributors output variable to 'true'
             echo "only_contributors=true" >> $GITHUB_ENV
             echo "Only Contributors.md file changed"
