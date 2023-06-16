@@ -108,10 +108,10 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: |
+              body: "
                 Thank you for your pull request. This pull request contains changes in files which requires review. The following files were changed:
 
-                **${process.env.files_changed.split(' ').map(file => `- ${file}`).join('\n')}**
+                **${process.env.files_changed.split(' ').map(file => `- ${file}`).join('\n')}**"
             })
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
