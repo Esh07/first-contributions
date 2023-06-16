@@ -33,8 +33,13 @@ jobs:
           # Get a list of files changed in the pull request
           FILES_CHANGED=$(git diff --name-only HEAD HEAD~1)
           
+          # Print the value of the FILES_CHANGED variable
+          echo "Files changed: $FILES_CHANGED"
+          
+          
           # Set the files_changed environment variable to the list of changed files
           echo "files_changed=$FILES_CHANGED" >> $GITHUB_ENV
+          
           
           # Check if the list of changed files only contains the Contributors.md file
           if [[ "$FILES_CHANGED" == "Contributors.md" ]]; then
