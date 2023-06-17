@@ -65,7 +65,7 @@ jobs:
         # older version
         # if: steps.is_only_contributors_file_changed.outputs.only_contributors == 'true'
         # new version
-        #if: env.only_contributors == 'true'
+        if: env.only_contributors == 'true'
         uses: actions/github-script@v5
 #         run: |
 #           STATUS_CODE=$(curl \
