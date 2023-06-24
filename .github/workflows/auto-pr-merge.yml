@@ -89,7 +89,7 @@ jobs:
                 const twitter_logo = "https://edent.github.io/SuperTinyIcons/images/svg/twitter.svg"
                 const fb_logo = "https://edent.github.io/SuperTinyIcons/images/svg/facebook.svg"
 
-                const getMergeMessage = username => `Hello @${username}, congratulations! You've successfully submitted a pull request. 🎉
+                const getMergeMessage = username => `Hello @${username}, congratulations! You've successfully submitted a pull request. 🎉 \n
                 
                 If you liked the tutorial, please star this repo by clicking star button on top right of this page.
                 <img alt="star screenshot" title="star button" src="https://firstcontributions.github.io/assets/star.png">
