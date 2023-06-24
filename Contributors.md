@@ -1,7 +1,6 @@
 # Contributors
 
 <!-- prettier-ignore-start and welcome -->
-- [Abhay Donga](https://github.com/AbhayDonga007)
 - testing with fresh forked repo
 - [Nandha Kumar](https://github.com/tnrock)
 - [Widdershins](https://github.com/Widdershins89)
