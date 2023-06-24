@@ -14,7 +14,6 @@
 - [Youssef Jrab](https://github.com/yjrab)
 - [Isaiah Swain](https://github.com/imswain)
 - testing
-- testing and erasing whole action file 
 - [Ilay Eldar](https://github.com/ilayEldar24)
 - [Vaibhavharsoda](https://github.com/vaibhavharsoda)
 - [Devanshu Augusty](https://github.com/Devanshu-Augusty)
