@@ -1,7 +1,6 @@
 # Contributors
 
 <!-- prettier-ignore-start and welcome -->
-- testing with fresh forked repo
 - [Nandha Kumar](https://github.com/tnrock)
 - [Widdershins](https://github.com/Widdershins89)
 - [Steven Veal](https://github.com/DolphinBeans)
