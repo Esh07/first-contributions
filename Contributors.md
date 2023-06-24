@@ -13,7 +13,6 @@
 - [Anadu Godwin](https://github.com/AnaduCG)
 - [Youssef Jrab](https://github.com/yjrab)
 - [Isaiah Swain](https://github.com/imswain)
-- testing
 - [Ilay Eldar](https://github.com/ilayEldar24)
 - [Vaibhavharsoda](https://github.com/vaibhavharsoda)
 - [Devanshu Augusty](https://github.com/Devanshu-Augusty)
