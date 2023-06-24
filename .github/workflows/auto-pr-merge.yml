@@ -58,12 +58,12 @@ jobs:
              })
             // Check if the merge was successful by checking the status code of the response
              if (response.status === 200) {
-             
-                // Generate the merge message using the getMergeMessage function
-                const message = getMergeMessage(context.payload.pull_request.user.login);
 
                 const getMergeMessage = username => `Hello @${username}, congratulations! You've successfully submitted a pull request. 🎉
-
+                
+                // Generate the merge message using the getMergeMessage function
+                const message = getMergeMessage(context.payload.pull_request.user.login);
+                
                 If you liked the tutorial, please star this repo by clicking star button on top right of this page.
                 <img alt="star screenshot" title="star button" src="https://firstcontributions.github.io/assets/star.png">
 
