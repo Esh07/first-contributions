@@ -142,11 +142,11 @@ jobs:
 
               } else if (error.status === 409) {
                 console.error("The pull request has conflicts with the target branch. Resolve the conflicts before merging.");
-                let errMsg = "The pull request has conflicts with the target branch. Resolve the conflicts before merging.";
+                errMsg = "The pull request has conflicts with the target branch. Resolve the conflicts before merging.";
 
               } else {
                 console.error("Something went wrong while merging the pull request.");
-                let errMsg = "Something went wrong while merging the pull request.";
+                errMsg = "Something went wrong while merging the pull request.";
               }
 
               // Post a comment on the pull request using the createComment method
