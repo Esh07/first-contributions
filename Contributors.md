@@ -30,8 +30,6 @@
 - [Bruno Masciotta](https://github.com/masciotta02)
 - [navadeep basavoju](https://github.com/navadeepbasavoju)
 - [arias] (https://github.com/aria-tec)
-- [Asad Munir](https://github.com/AsadUllah428)
-- Pranav Ghorpade (https://github.com/ghorpadeire)
 - [Dhanshree Patangrao](https://github.com/Dhanshree019)
 - Lynn
 - Pabitra Maity (https://github.com/Codewithpabitra)
@@ -1785,3 +1783,5 @@ test
 test
 test 1 line 
 test line 1
+1 line
+2 line
