@@ -1,0 +1,18 @@
+diff --git a/Contributors.md b/Contributors.md
+index e330c7c01..de8e2ee0c 100644
+--- a/Contributors.md
++++ b/Contributors.md
+@@ -1778,9 +1778,11 @@ Naman Malik
+ - [CoreDumpNotCrash](https://github.com/CoreDumpNotCrash)
+ - [Suinnnn](https://github.com/Suinnnn)
+ - [Sahil Ghag](https://github.com/Sahilghagg)
+-- [Daniel Peralta](https://github.com/DDalta)
+-- Nurbol Abu
++  Replaced line here
++
++Add new Line
+ - [Ananya Parihar](https://github.com/ananyaparihar/first-contributions)
++- Hmm could be fit 1 line here
+ test
+ test
+ test 1 line 
