@@ -42,13 +42,7 @@
 - [jonadev19](https://github.com/jonadev19)
 - [Abhishek Rathore] (https://github.com/abhishck)
 - [Rahul Kothuri] (https://github.com/rahulkothuri)
-- [Aniruddha Maurya](https://github.com/Aniruddha2701)
-- [Choi Doyoun](https://github.com/justjs4evr)
-- [Vaibhaw Kumar Parashar](https://github.com/TheVaibhaw)
-- [Rajdip](https://github.com/Rajdip1)
-- [Tinku Shekhar Das](https://github.com/codeByTinku)
-- [Andres Aponte](https://github.com/angiovanny) 
-- [Rusil Koirala](https://github.com/rusilkoirala)
+
 - [Jeremiah Isaacson](https://github.com/jeremiahjordanisaacson)
 - [Sanjay Baskaran](https://github.com/sanjayb-28)
 - [Adnan Aftab](https://github.com/AdnanAftab1/)
@@ -1785,3 +1779,4 @@ test
 test
 test 1 line 
 test line 1
+change on contribute file too

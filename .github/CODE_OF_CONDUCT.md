@@ -1,4 +1,4 @@
-
+i am crazy
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
